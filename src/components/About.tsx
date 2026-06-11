@@ -63,7 +63,7 @@ export function About() {
           <Reveal>
             <div className="pcard" style={{ padding: 16 }}>
               <div className="screen" style={{ borderRadius: 6, overflow: "hidden", aspectRatio: "1/1" }}>
-                <PixelImage src={oliverImg} res={120} />
+                <PixelImage src={oliverImg} res={256} />
               </div>
               <div style={{ marginTop: 14, textAlign: "center" }}>
                 <div className="hud" style={{ fontSize: 13, color: "var(--ink)" }}>

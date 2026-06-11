@@ -69,8 +69,7 @@ export function Contact() {
                 className="pixel-body"
                 style={{ fontSize: 22, maxWidth: 520, margin: "16px auto 0" }}
               >
-                Got a project worth building right? Let's create something extraordinary — I reply
-                within one business day.
+                Got a project worth building? Let's create something.
               </p>
             </Reveal>
 

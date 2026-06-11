@@ -509,7 +509,7 @@ export function Hero({ boot, setBoot, scrollTo }: HeroProps) {
               <span className="grad" style={{ fontWeight: 700 }}>
                 invrse
               </span>{" "}
-              — a boutique web development agency{" "}
+              — a boutique web development agency.
             </p>
             <div
               style={{
