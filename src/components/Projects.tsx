@@ -40,7 +40,7 @@ const CARTRIDGES: Cartridge[] = [
   },
   {
     title: "Tresaire Ann",
-    genre: "Clothing Design Studio",
+    genre: "Fullstack Development",
     emblem: "shirt",
     year: "2026",
     color: "#a855f7",
@@ -51,7 +51,7 @@ const CARTRIDGES: Cartridge[] = [
   },
   {
     title: "Oliver Howard",
-    genre: "Photography Portfolio",
+    genre: "Frontend Development",
     emblem: "camera",
     year: "2025",
     color: "var(--chip)",
@@ -257,7 +257,7 @@ export function Projects() {
                 className="pixel-body"
                 style={{ fontSize: 22, color: "var(--ink)", marginTop: 6 }}
               >
-                Internal tooling, layout experiments &amp; modular React systems.
+                Niche projects &amp; open source contributions can be found on my GitHub.
               </div>
             </div>
             <a
