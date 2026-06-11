@@ -1,3 +1,7 @@
 design_handoff_portfolio/
 .DS_Store
-12
+CLAUDE.md
+.claude/
+
+dist/
+node_modules/

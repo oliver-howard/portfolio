@@ -81,7 +81,7 @@ export function NowPlaying() {
                   <div
                     style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 12 }}
                   >
-                    <div className="meter" style={{ color: q.c, flex: 1, height: 12 }}>
+                    <div className="meter" style={{ color: q.c, flex: 1 }}>
                       <span style={{ width: `${q.pct}%` }} />
                     </div>
                     <span

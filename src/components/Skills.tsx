@@ -50,7 +50,7 @@ function InvSlot({ it }: { it: InventoryItem }) {
         <span className="hud" style={{ fontSize: 8, color: it.rar }}>
           LV {it.lvl}
         </span>
-        <div className="meter" style={{ color: it.rar, flex: 1, height: 10 }}>
+        <div className="meter" style={{ color: it.rar, flex: 1 }}>
           <span style={{ width: `${it.lvl}%` }} />
         </div>
       </div>

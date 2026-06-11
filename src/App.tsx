@@ -8,7 +8,7 @@ import { NowPlaying } from "./components/NowPlaying";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
-type Theme = "dark" | "light";
+type Theme = "light" | "dark";
 type BootStyle = "A" | "B" | "C";
 
 function scrollToId(id: string) {
