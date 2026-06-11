@@ -5,11 +5,10 @@ import { Sprite } from "./Sprite";
 import oliverImg from "../assets/oliver.jpeg";
 
 const STATS: [string, number, string][] = [
+  ["Data & Math", 99, "var(--coin)"],
   ["Frontend", 95, "var(--chip)"],
-  ["Systems / Backend", 82, "var(--xp)"],
+  ["Systems / Backend", 93, "var(--xp)"],
   ["Design / UI", 90, "#a855f7"],
-  ["Data & Math", 78, "var(--coin)"],
-  ["Photography", 85, "var(--heart)"],
 ];
 
 function PixelImage({ src, res = 56 }: { src: string; res?: number }) {
@@ -47,9 +46,9 @@ export function About() {
       <div className="wrap">
         <SectionHead
           tag="Character Sheet"
-          title="ABOUT THE PLAYER"
+          title="PLAYER 1"
           accent="#a855f7"
-          sub="A passion for perfect code — and a photographer's eye for composition."
+          sub=""
         />
         <div
           className="about-grid"
@@ -64,7 +63,7 @@ export function About() {
           <Reveal>
             <div className="pcard" style={{ padding: 16 }}>
               <div className="screen" style={{ borderRadius: 6, overflow: "hidden", aspectRatio: "1/1" }}>
-                <PixelImage src={oliverImg} res={60} />
+                <PixelImage src={oliverImg} res={120} />
               </div>
               <div style={{ marginTop: 14, textAlign: "center" }}>
                 <div className="hud" style={{ fontSize: 13, color: "var(--ink)" }}>
@@ -74,7 +73,7 @@ export function About() {
                   className="pixel-body"
                   style={{ fontSize: 18, color: "var(--ink-3)", marginTop: 6 }}
                 >
-                  Engineer · Designer · Photographer
+                  Engineer · Data Scientist · Founder
                 </div>
                 <div
                   style={{
@@ -100,14 +99,11 @@ export function About() {
           <Reveal delay={0.1}>
             <div className="pcard" style={{ padding: "26px 28px" }}>
               <p className="pixel-body" style={{ fontSize: 22, margin: 0 }}>
-                I'm Oliver — a software engineer and designer with a background in data science and
-                applied math from UC Berkeley. I run{" "}
+                I'm Oliver — a software engineer with a background in data science and applied math from UC Berkeley. My work spans full-stack web development at {" "}
                 <span className="grad" style={{ fontWeight: 700 }}>
                   invrse
                 </span>
-                , a studio writing 100% custom code: React, Next.js, TypeScript, and Node. I build
-                digital systems, not templates — conversion-focused, Lighthouse-grade, and
-                obsessively detailed.
+                , data engineering internships in SF and London, and machine learning from my time at Cal.
               </p>
               <div
                 style={{
