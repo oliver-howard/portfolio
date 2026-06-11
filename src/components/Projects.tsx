@@ -219,9 +219,9 @@ export function Projects() {
       <div className="wrap" style={{ position: "relative" }}>
         <SectionHead
           tag="Select Cartridge"
-          title="SELECTED WORKS"
+          title="PROJECTS"
           accent="var(--coin)"
-          sub="A curation of engineering-focused digital experiences. Hand-coded front to back."
+          sub="A selection of engineering-focused projects. Built 100% by me."
         />
         <div
           style={{

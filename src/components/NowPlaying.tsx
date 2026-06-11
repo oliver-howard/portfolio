@@ -10,9 +10,8 @@ interface Quest {
 
 // TODO: update current projects
 const QUESTS: Quest[] = [
-  { t: "Bookrex — recommendation engine v2", d: "Main quest", pct: 72, c: "var(--xp)" },
+  { t: "Pitch - adding custom tuning features (expanding beyond EADGBE)", d: "Main quest", pct: 20, c: "var(--xp)" },
   { t: "invrse — care-plan dashboard", d: "Side quest", pct: 45, c: "var(--chip)" },
-  { t: "Shooting 35mm — a city series", d: "Daily", pct: 30, c: "var(--heart)" },
 ];
 
 export function NowPlaying() {
@@ -27,7 +26,7 @@ export function NowPlaying() {
           tag="Now Playing"
           title="ACTIVE QUESTS"
           accent="var(--xp)"
-          sub="What I'm building this season."
+          sub="What I'm building now."
         />
         <div className="pcard" style={{ padding: "10px 8px" }}>
           {QUESTS.map((q, i) => (
