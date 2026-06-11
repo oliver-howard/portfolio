@@ -8,6 +8,7 @@ interface Quest {
   c: string;
 }
 
+// TODO: update current projects
 const QUESTS: Quest[] = [
   { t: "Bookrex — recommendation engine v2", d: "Main quest", pct: 72, c: "var(--xp)" },
   { t: "invrse — care-plan dashboard", d: "Side quest", pct: 45, c: "var(--chip)" },

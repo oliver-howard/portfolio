@@ -10,7 +10,7 @@ const BOOTS: { id: BootStyle; label: string }[] = [
   { id: "C", label: "Cards" },
 ];
 
-function HandheldBoot() {
+function HandheldBoot({ scrollTo }: { scrollTo: (id: string) => void }) {
   return (
     <div className="bob" style={{ width: "min(380px, 86vw)", margin: "0 auto" }}>
       <div
@@ -100,13 +100,18 @@ function HandheldBoot() {
                   transform: "rotate(-20deg)",
                 }}
               />
-              <span
+              <button
+                aria-label="Start"
+                onClick={() => scrollTo("projects")}
                 style={{
                   width: 26,
                   height: 7,
                   background: "var(--ink-3)",
                   borderRadius: 9,
                   transform: "rotate(-20deg)",
+                  border: "none",
+                  cursor: "pointer",
+                  padding: 0,
                 }}
               />
             </div>
@@ -211,7 +216,7 @@ const BIOS_LINES = [
   "> ready.",
 ];
 
-function BiosBoot() {
+function BiosBoot({ scrollTo }: { scrollTo: (id: string) => void }) {
   const reduce =
     typeof window !== "undefined" &&
     window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
@@ -277,12 +282,15 @@ function BiosBoot() {
             ))}
             {n >= BIOS_LINES.length && (
               <div
+                role="button"
                 style={{
                   marginTop: 14,
                   color: "var(--coin)",
                   fontFamily: "var(--font-hud)",
                   fontSize: 13,
+                  cursor: "pointer",
                 }}
+                onClick={() => scrollTo("projects")}
               >
                 ▶ PRESS START <span className="blink">▮</span>
               </div>
@@ -334,7 +342,14 @@ function CardFace({
   );
 }
 
-function CardFan() {
+const MENU: { label: string; target: string }[] = [
+  { label: "NEW GAME",  target: "contact" },
+  { label: "LOAD GAME", target: "projects"  },
+  { label: "OPTIONS",  target: "about"    },
+];
+
+function CardFan({ scrollTo }: { scrollTo: (id: string) => void }) {
+  const [active, setActive] = useState(0);
   const cards = [
     { emblem: "camera" as const, suit: "PH", color: "var(--chip)", rot: -16, x: -150, y: 24 },
     { emblem: "shirt" as const, suit: "UI", color: "#a855f7", rot: -6, x: -70, y: 4 },
@@ -384,14 +399,25 @@ function CardFan() {
             alignItems: "flex-start",
           }}
         >
-          {["▶ NEW RUN", "  CONTINUE", "  OPTIONS"].map((m, i) => (
-            <span
+          {MENU.map((m, i) => (
+            <button
               key={i}
               className="hud"
-              style={{ fontSize: 12, color: i === 0 ? "var(--coin)" : "var(--ink-3)" }}
+              onClick={() => scrollTo(m.target)}
+              onMouseEnter={() => setActive(i)}
+              style={{
+                fontSize: 12,
+                color: i === active ? "var(--coin)" : "var(--ink-3)",
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                padding: 0,
+                fontFamily: "inherit",
+                textAlign: "left",
+              }}
             >
-              {m}
-            </span>
+              {i === active ? "▶ " : "  "}{m.label}
+            </button>
           ))}
         </div>
       </div>
@@ -453,9 +479,9 @@ export function Hero({ boot, setBoot, scrollTo }: HeroProps) {
           <div
             style={{ minHeight: 320, display: "grid", placeItems: "center", marginBottom: 8 }}
           >
-            {boot === "A" && <HandheldBoot />}
-            {boot === "B" && <BiosBoot />}
-            {boot === "C" && <CardFan />}
+            {boot === "A" && <HandheldBoot scrollTo={scrollTo} />}
+            {boot === "B" && <BiosBoot scrollTo={scrollTo} />}
+            {boot === "C" && <CardFan scrollTo={scrollTo} />}
           </div>
         </Reveal>
 
