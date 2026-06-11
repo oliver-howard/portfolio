@@ -9,18 +9,19 @@ interface InventoryItem {
 }
 
 const INVENTORY: InventoryItem[] = [
-  { name: "React", cat: "FRONTEND", rar: "var(--chip)", lvl: "99" },
-  { name: "Next.js", cat: "FRONTEND", rar: "var(--chip)", lvl: "97" },
+  { name: "React", cat: "FRONTEND", rar: "var(--chip)", lvl: "93" },
+  { name: "Next.js", cat: "FRONTEND", rar: "var(--chip)", lvl: "92" },
   { name: "TypeScript", cat: "FRONTEND", rar: "var(--chip)", lvl: "94" },
   { name: "Tailwind", cat: "FRONTEND", rar: "var(--chip)", lvl: "96" },
-  { name: "Framer Motion", cat: "FRONTEND", rar: "#a855f7", lvl: "88" },
-  { name: "Vite", cat: "FRONTEND", rar: "#a855f7", lvl: "90" },
+  { name: "HTML/CSS", cat: "FRONTEND", rar: "var(--chip)", lvl: "90" },
+  { name: "Python", cat: "BACKEND", rar: "var(--xp)", lvl: "95" },
   { name: "Node.js", cat: "BACKEND", rar: "var(--xp)", lvl: "85" },
-  { name: "PostgreSQL", cat: "BACKEND", rar: "var(--xp)", lvl: "80" },
-  { name: "Sanity", cat: "BACKEND", rar: "var(--xp)", lvl: "78" },
-  { name: "OpenAI API", cat: "BACKEND", rar: "var(--coin)", lvl: "82" },
+  { name: "SQL", cat: "BACKEND", rar: "var(--xp)", lvl: "80" },
+  { name: "PyTorch", cat: "AI / ML", rar: "var(--coin)", lvl: "75" },
+  { name: "scikit-learn", cat: "AI / ML", rar: "var(--coin)", lvl: "85" },
+  { name: "OpenAI API", cat: "AI / ML", rar: "var(--coin)", lvl: "82" },
   { name: "Vercel", cat: "TOOLING", rar: "var(--ink-2)", lvl: "92" },
-  { name: "Cloudinary", cat: "TOOLING", rar: "var(--ink-2)", lvl: "76" },
+  { name: "Vite", cat: "TOOLING", rar: "var(--ink-2)", lvl: "90" },
 ];
 
 function InvSlot({ it }: { it: InventoryItem }) {
@@ -68,9 +69,9 @@ export function Skills() {
       <div className="wrap">
         <SectionHead
           tag="Inventory"
-          title="EQUIPPED LOADOUT"
+          title="LOADOUT"
           accent="var(--chip)"
-          sub="The toolkit I carry into every build. Hover to inspect each item."
+          sub=""
         />
         <div
           style={{
