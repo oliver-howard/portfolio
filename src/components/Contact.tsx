@@ -119,8 +119,8 @@ export function Contact() {
                 </span>
                 <a
                   className="btn btn-gold"
-                  href="#"
-                  onClick={(e) => e.preventDefault()}
+                  href="/oliver_howard_resume.pdf"
+                  download="oliver_howard_resume.pdf"
                 >
                   <Sprite name="disk" px={3} /> Save File · Resume.pdf
                 </a>

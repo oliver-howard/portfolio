@@ -515,7 +515,7 @@ export function Hero({ boot, setBoot, scrollTo }: HeroProps) {
               >
                 Start Co-op
               </a>
-              <a className="btn btn-gold" href="#" onClick={(e) => e.preventDefault()}>
+              <a className="btn btn-gold" href="/oliver_howard_resume.pdf" download="oliver_howard_resume.pdf">
                 <Sprite name="download" px={3} /> Save File
               </a>
             </div>
