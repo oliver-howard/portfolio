@@ -26,7 +26,7 @@ function getInitialTheme(): Theme {
 
 export default function App() {
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
-  const [boot, setBoot] = useState<BootStyle>("A");
+  const [boot, setBoot] = useState<BootStyle>("B");
   const [scanlines] = useState(true);
 
   useEffect(() => {

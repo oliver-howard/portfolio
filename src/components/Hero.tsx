@@ -479,12 +479,11 @@ export function Hero({ boot, setBoot, scrollTo }: HeroProps) {
               HOWARD
             </h1>
             <p className="pixel-body" style={{ fontSize: 23, marginTop: 18 }}>
-              Software engineer &amp; designer. Founder of{" "}
+              Berkeley-trained engineer and data scientist. I build full-stack web apps, AI-powered tools, and data pipelines. Founder of{" "}
               <span className="grad" style={{ fontWeight: 700 }}>
                 invrse
               </span>{" "}
-              — building fast, beautifully crafted websites.{" "}
-              <span style={{ color: "var(--ink)" }}>No templates. Ever.</span>
+              — a boutique web development agency{" "}
             </p>
             <div
               style={{
@@ -532,7 +531,7 @@ export function Hero({ boot, setBoot, scrollTo }: HeroProps) {
             >
               {(
                 [
-                  ["LVL", "Berkeley", "var(--chip)"],
+                  ["LVL", "New Grad", "var(--chip)"],
                   ["CLASS", "Eng / Design", "#a855f7"],
                   ["LOC", "California", "var(--xp)"],
                 ] as const
