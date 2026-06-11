@@ -1,5 +1,7 @@
 # oliver-howard.com
 
+![hero](src/assets/hero.png)
+
 Personal portfolio — retro game aesthetic, built fully from scratch.
 
 **Live:** [oliver-howard.com](https://oliver-howard.com)
