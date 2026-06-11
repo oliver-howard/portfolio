@@ -12,38 +12,64 @@ interface Cartridge {
   body: string;
   stack: string[];
   status: "SHIPPED" | "LIVE";
+  href: string;
 }
 
 const CARTRIDGES: Cartridge[] = [
   {
+    title: "invrse",
+    genre: "Web Development Agency",
+    emblem: "laptop",
+    year: "2025 - Present",
+    color: "var(--chip)",
+    body: "Fully custom coded, modern websites",
+    stack: ["React", "Next.js", "Tailwind"],
+    status: "LIVE",
+    href: "https://invrse.dev",
+  },
+    {
+    title: "pitch",
+    genre: "Fullstack Development",
+    emblem: "guitar",
+    year: "2026",
+    color: "var(--coin)",
+    body: "Minimal guitar tuner web app using Pitchy for pitch detection + Web Audio API for mic access",
+    stack: ["React", "Next.js", "Vite"],
+    status: "SHIPPED",
+    href: "https://tuner.oliver-howard.com",
+  },
+  {
     title: "Tresaire Ann",
     genre: "Clothing Design Studio",
     emblem: "shirt",
-    year: "2024",
+    year: "2026",
     color: "#a855f7",
-    body: "Visual identity and digital storefront for a contemporary clothing label — custom commerce on Next.js.",
-    stack: ["Next.js", "Sanity", "Vercel"],
+    body: "Visual identity and digital storefront for a contemporary clothing label — using React + Shopify Headless",
+    stack: ["React", "Shopify Headless", "Instagram API"],
     status: "SHIPPED",
+    href: "https://tresaireann.com",
   },
   {
     title: "Oliver Howard",
     genre: "Photography Portfolio",
     emblem: "camera",
-    year: "2024",
+    year: "2025",
     color: "var(--chip)",
-    body: "Editorial monochrome portfolio for a documentary photographer. Sticky hero, custom lightbox, obsessive type.",
-    stack: ["React", "Framer Motion", "Cloudinary"],
-    status: "SHIPPED",
+    body: "Editorial monochrome portfolio for an amateur photographer.",
+    stack: ["HTML", "CSS", "Javascript"],
+    status: "LIVE",
+    href: "https://photos.oliver-howard.com",
   },
   {
     title: "Bookrex",
-    genre: "Fullstack Systems",
+    genre: "Fullstack Development",
     emblem: "book",
     year: "2025",
     color: "var(--xp)",
-    body: "AI-flavored book recommendation platform. Custom recommendation engine, real-time feeds, playful UI.",
-    stack: ["Next.js", "PostgreSQL", "OpenAI"],
-    status: "LIVE",
+    body: "AI book recommendation platform. Custom recommendation engine and data pipeline. Uses Goodreads, Hardcover, etc.",
+    stack: ["React", "Node.js", "OpenAI"],
+    status: "SHIPPED",
+    href: "https://bookrex.fiosa.us",
   },
 ];
 
@@ -104,7 +130,6 @@ function CartridgeCard({ c, i }: { c: Cartridge; i: number }) {
                   fontSize: 16,
                   color: "var(--ink)",
                   marginTop: 10,
-                  textShadow: "3px 3px 0 var(--shadow-ink)",
                 }}
               >
                 {c.title}
@@ -173,9 +198,10 @@ function CartridgeCard({ c, i }: { c: Cartridge; i: number }) {
             </span>
             <a
               className="btn"
-              href="#"
+              href={c.href}
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ padding: "9px 13px", fontSize: 9 }}
-              onClick={(e) => e.preventDefault()}
             >
               Load ▶
             </a>

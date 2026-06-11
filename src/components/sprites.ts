@@ -238,6 +238,42 @@ export const SPRITES: Record<string, SpriteData> = {
       "....w...",
     ],
   },
+  guitar: {
+    px: 5,
+    palette: { B: P.ink, G: P.gold, g: P.goldD, h: P.dk },
+    art: [
+      "...BBBB...",   // headstock
+      "...BGGB...",
+      "..BBGGBB..",   // tuning pegs
+      "....BB....",   // neck
+      "....BB....",
+      "....BB....",
+      "..BBBBB...",   // upper bout
+      ".BGGGGGgB.",
+      ".BGGhGGgB.",   // sound hole
+      "..BBBBB...",   // waist
+      ".BGGGGGGgB",   // lower bout
+      "BGGGGGGGgB",
+      "BGGGGGGGgB",
+      ".BBBBBBBB.",
+    ],
+  },
+  laptop: {
+    px: 5,
+    palette: { B: P.ink, s: "#0f2744", L: P.blue, l: P.bluL, b: "#3a3464", k: "#4d4880" },
+    art: [
+      ".BBBBBBBBBB.",
+      "BssssssssssB",
+      "BslLsssssssB",
+      "BssssssssssB",
+      "BssssssssssB",
+      ".BBBBBBBBBB.",
+      "bbbbbbbbbbbb",
+      "bkkkbkkkbkkb",
+      "bkkkkkkkkkkb",
+      "bbbbbbbbbbbb",
+    ],
+  },
   power: {
     px: 5,
     palette: { w: "currentColor", d: "transparent" },

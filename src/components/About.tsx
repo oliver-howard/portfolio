@@ -103,7 +103,7 @@ export function About() {
                 <span className="grad" style={{ fontWeight: 700 }}>
                   invrse
                 </span>
-                , data engineering internships in SF and London, and machine learning from my time at Cal.
+                , software engineering internships in SF and London, and machine learning from my time at Cal.
               </p>
               <div
                 style={{

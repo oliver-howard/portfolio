@@ -114,9 +114,6 @@ export function Contact() {
                   flexWrap: "wrap",
                 }}
               >
-                <span className="pixel-body" style={{ fontSize: 20, color: "var(--ink-2)" }}>
-                  Or grab my save file — the full character sheet →
-                </span>
                 <a
                   className="btn btn-gold"
                   href="/oliver_howard_resume.pdf"
