@@ -211,7 +211,7 @@ const BIOS_LINES = [
   "> mem: 64k .............. OK",
   "> loading modules:",
   "   react · next · typescript · tailwind",
-  "> mounting /projects ... 3 cartridges found",
+  "> mounting /projects ... 5 cartridges found",
   "> profile: oliver_howard.sav loaded",
   "> ready.",
 ];
