@@ -11,7 +11,6 @@ interface Quest {
 // TODO: update current projects
 const QUESTS: Quest[] = [
   { t: "Pitch - adding custom tuning features (expanding beyond EADGBE)", d: "Main quest", pct: 20, c: "var(--xp)" },
-  { t: "BookRex UI Overhaul", d: "Main quest", pct: 30, c: "var(--xp)" },
 ];
 
 export function NowPlaying() {

@@ -46,7 +46,7 @@ export function About() {
       <div className="wrap">
         <SectionHead
           tag="Character Sheet"
-          title="PLAYER 1"
+          title="About Me"
           accent="#a855f7"
           sub=""
         />
