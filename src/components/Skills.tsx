@@ -69,7 +69,7 @@ export function Skills() {
       <div className="wrap">
         <SectionHead
           tag="Inventory"
-          title="LOADOUT"
+          title="SKILLS"
           accent="var(--chip)"
           sub=""
         />

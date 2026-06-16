@@ -7,6 +7,7 @@ import { Projects } from "./components/Projects";
 import { NowPlaying } from "./components/NowPlaying";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { GithubCalendar } from './components/GithubCalendar';
 
 type Theme = "light" | "dark";
 type BootStyle = "A" | "B" | "C";
@@ -47,6 +48,7 @@ export default function App() {
       <Hero boot={boot} setBoot={setBoot} scrollTo={scrollToId} />
       <div className="section-divider" />
       <About />
+      <GithubCalendar />
       <Skills />
       <Projects />
       <NowPlaying />
