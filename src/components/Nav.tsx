@@ -3,9 +3,9 @@ import { Sprite } from "./Sprite";
 
 const NAV_LINKS = [
   ["about", "About"],
-  ["skills", "Loadout"],
-  ["projects", "Works"],
-  ["now", "Now"],
+  ["skills", "Skills"],
+  ["projects", "Projects"],
+  ["now", "Current"],
   ["contact", "Contact"],
 ] as const;
 

@@ -24,7 +24,7 @@ export function NowPlaying() {
       <div className="wrap">
         <SectionHead
           tag="Now Playing"
-          title="ACTIVE QUESTS"
+          title="CURRENT PROJECTS"
           accent="var(--xp)"
           sub="What I'm building now."
         />
