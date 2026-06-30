@@ -15,7 +15,19 @@ interface Cartridge {
   href: string;
 }
 
+
 const CARTRIDGES: Cartridge[] = [
+    {
+    title: "Commonplace",
+    genre: "Fullstack Development",
+    emblem: "commonplace",
+    year: "2026",
+    color: "var(--xp)",
+    body: "Social Blog Platform",
+    stack: ["React", "Next.js", "Sanity", "Resend"],
+    status: "LIVE",
+    href: "https://commonplace.oliver-howard.com",
+  },
   {
     title: "invrse",
     genre: "Web Development Agency",

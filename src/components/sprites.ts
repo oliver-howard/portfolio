@@ -287,4 +287,20 @@ export const SPRITES: Record<string, SpriteData> = {
       "..wwww..",
     ],
   },
+  commonplace: {
+    px: 5,
+    palette: { B: P.ink, w: "#dbeafe", m: P.blue },
+    art: [
+      "BBBBBBBBBBBB",
+      "BwwwwwwwwwwB",
+      "BwmmmmwwwwwB",
+      "BwwwwwwwwwwB",
+      "BwmmmmmmmwwB",
+      "BwwwwwwwwwwB",
+      "BwmmmmwwwwwB",
+      "BBBBBBBBBBBB",
+      "..BB........",
+      "...B........",
+    ],
+  },
 };

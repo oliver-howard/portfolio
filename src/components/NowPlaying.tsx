@@ -10,8 +10,8 @@ interface Quest {
 
 // TODO: update current projects
 const QUESTS: Quest[] = [
-  { t: "Pitch - adding custom tuning features (expanding beyond EADGBE)", d: "Main quest", pct: 0, c: "var(--xp)" },
-  { t: "Dev Diary Website (Blog)", d: "Main quest", pct: 20, c: "var(--chip)" },
+  { t: "Commonplace (Social Blog)", d: "Main quest", pct: 90, c: "var(--chip)" },
+  { t: "Pitch - adding custom tuning features (expanding beyond EADGBE)", d: "Main quest", pct: 10, c: "var(--xp)" },
 ];
 
 export function NowPlaying() {
