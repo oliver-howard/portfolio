@@ -17,6 +17,17 @@ interface Cartridge {
 
 
 const CARTRIDGES: Cartridge[] = [
+  {
+    title: "The Society",
+    genre: "Fullstack Development",
+    emblem: "book",
+    year: "2026",
+    color: "var(--chip)",
+    body: "Book Club Dashboard with auth, book search, and book club management.",
+    stack: ["React", "Next.js", "Neon", "Clerk"],
+    status: "SHIPPED",
+    href: "https://society.oliver-howard.com",
+  },
     {
     title: "Commonplace",
     genre: "Fullstack Development",

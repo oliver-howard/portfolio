@@ -10,8 +10,7 @@ interface Quest {
 
 // TODO: update current projects
 const QUESTS: Quest[] = [
-  { t: "Commonplace (Social Blog)", d: "Main quest", pct: 90, c: "var(--chip)" },
-  { t: "Pitch - adding custom tuning features (expanding beyond EADGBE)", d: "Main quest", pct: 10, c: "var(--xp)" },
+  { t: "Book Club Dashboard", d: "Main quest", pct: 100, c: "var(--chip)" },
 ];
 
 export function NowPlaying() {
