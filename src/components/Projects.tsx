@@ -11,12 +11,22 @@ interface Cartridge {
   color: string;
   body: string;
   stack: string[];
-  status: "SHIPPED" | "LIVE";
-  href: string;
+  status: "SHIPPED" | "LIVE" | "IN PROGRESS";
+  href?: string;
 }
 
 
 const CARTRIDGES: Cartridge[] = [
+  {
+    title: "Quire",
+    genre: "iOS Development",
+    emblem: "apple",
+    year: "2026",
+    color: "var(--coin)",
+    body: "Native iOS client for Grimmory — a self-hosted digital library client for ebooks and PDFs. Readium-based reader with Grimmory server integration.",
+    stack: ["Swift", "SwiftUI", "Readium", "Xcode"],
+    status: "IN PROGRESS",
+  },
   {
     title: "The Society",
     genre: "Fullstack Development",
@@ -95,6 +105,12 @@ const CARTRIDGES: Cartridge[] = [
     href: "https://bookrex.fiosa.us",
   },
 ];
+
+function statusColor(status: Cartridge["status"]) {
+  if (status === "LIVE") return "var(--xp)";
+  if (status === "IN PROGRESS") return "var(--coin)";
+  return "var(--ink-3)";
+}
 
 function CartridgeCard({ c, i }: { c: Cartridge; i: number }) {
   return (
@@ -204,7 +220,7 @@ function CartridgeCard({ c, i }: { c: Cartridge; i: number }) {
               className="hud"
               style={{
                 fontSize: 8,
-                color: c.status === "LIVE" ? "var(--xp)" : "var(--ink-3)",
+                color: statusColor(c.status),
               }}
             >
               <span
@@ -212,22 +228,37 @@ function CartridgeCard({ c, i }: { c: Cartridge; i: number }) {
                   display: "inline-block",
                   width: 7,
                   height: 7,
-                  background: c.status === "LIVE" ? "var(--xp)" : "var(--ink-3)",
+                  background: statusColor(c.status),
                   marginRight: 6,
                   borderRadius: "50%",
                 }}
               />
               {c.status} · {c.year}
             </span>
-            <a
-              className="btn"
-              href={c.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ padding: "9px 13px", fontSize: 9 }}
-            >
-              Load ▶
-            </a>
+            {c.href ? (
+              <a
+                className="btn"
+                href={c.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ padding: "9px 13px", fontSize: 9 }}
+              >
+                Load ▶
+              </a>
+            ) : (
+              <span
+                className="btn"
+                style={{
+                  padding: "9px 13px",
+                  fontSize: 9,
+                  opacity: 0.55,
+                  cursor: "default",
+                  pointerEvents: "none",
+                }}
+              >
+                Soon ⌛
+              </span>
+            )}
           </div>
         </div>
       </div>

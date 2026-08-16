@@ -10,6 +10,7 @@ interface Quest {
 
 // TODO: update current projects
 const QUESTS: Quest[] = [
+  { t: "Quire — iOS Reader", d: "Main quest", pct: 70, c: "var(--coin)" },
   { t: "Book Club Dashboard", d: "Main quest", pct: 100, c: "var(--chip)" },
 ];
 
